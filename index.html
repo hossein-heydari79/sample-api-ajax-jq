@@ -1,0 +1,85 @@
+<!-- 1b253635-65a5-48ea-9bff-2bc18e4400ed -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرم ثبت اطلاعات</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container form px-4 px-sm-0">
+      <form
+        id="form"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <div class="row text-right">
+          <div class="col-12 col-sm-12 col-md-6 col-lg">
+            <label for="fName">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="fName"
+              class="form-control"
+              placeholder="نام و نام خانوادگی"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg mt-4 mt-md-0">
+            <label for="username">نام کاربری</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="نام کاربری"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg mt-4 mt-md-0">
+            <label for="telephone">شماره تلفن</label>
+            <input
+              type="text"
+              class="form-control"
+              id="telephone"
+              placeholder="شماره تلفن"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg mt-4 mt-md-0">
+            <label for="Email">ایمیل</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="ایمیل"
+            />
+          </div>
+        </div>
+        <div class="row pt-5">
+          <button class="button" id="submit">ثبت</button>
+        </div>
+        <small id="small" class="pt-5"></small>
+      </form>
+    </div>
+    <div class="container-fluid table-parent px-0">
+      <table id="table" class="mx-auto d-none">
+        <thead id="thead">
+          <tr>
+            <th>نام و نام خانوادگی</th>
+            <th>نام کاربری</th>
+            <th>شماره تلفن</th>
+            <th>ایمیل</th>
+            <th colspan="2">حذف/ویرایش</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="./assets/js/globals.js"></script>
+ 
+    <script src="./assets/JQuery/jquery.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/controller.js"></script>
+    <script src="./assets/js/_service.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+  </body>
+</html>
